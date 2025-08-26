@@ -1,48 +1,71 @@
-# Picto - Personal Portfolio Free Template
+# Abdullah's Professional Portfolio
 
-#### Preview
+[![React](https://img.shields.io/badge/React-19-%2361DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-6-%23646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-%2306B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-- [Demo](https://themewagon.github.io/picto/)
+This is the official repository for my personal portfolio website, built from the ground up to showcase my skills in System Administration, Full-Stack Development, and modern web technologies.
 
-#### Download
+### [➡️ View Live Demo](https:/mt-abdulla/.github.io/abdullah-dev/)
 
-- [Download from ThemeWagon](https://themewagon.com/themes/picto)
 
-## Getting Started
 
-1. Clone Repository
+---
 
-```
-git clone https://github.com/themewagon/picto.git
-```
+![Portfolio Screenshot](./public/screenshot.png)
 
-2. Install Dependencies
 
-```
-npm i
-```
+## 📋 About This Project
 
-3. Run the development server:
+This portfolio is a fully responsive, single-page application designed to provide a comprehensive overview of my professional journey, technical skills, and key projects. It was built using a modern, performance-oriented tech stack to ensure a fast and seamless user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ✨ Key Features
 
-## Author
+*   **Professional Hero Graphic:** A dynamic introduction with animated, floating icons representing key skills.
+*   **Career Trajectory Timeline:** A custom-built, two-column timeline detailing my professional experience and accomplishments.
+*   **6-Category Skills Grid:** A detailed and organized showcase of my technical competencies across different domains.
+*   **Featured Projects Showcase:** A grid of my most impactful projects with links to live demos and source code.
+*   **Professional Contact Hub:** A unified section with multiple ways to connect and a fully functional contact form.
+*   **Fully Responsive:** The entire layout is mobile-first and adapts beautifully to all screen sizes.
 
-```
-Developed by ThemeWagon and development team.
-```
+## 🛠️ Technologies Used
 
-## License
+*   **Frontend:** React 19, Vite, Tailwind CSS, DaisyUI
+*   **Libraries:** React Router, React Scroll, Swiper.js, Font Awesome
+*   **Deployment:** GitHub Pages
 
-- Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
-- Licensed cover under [MIT]
-- Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
+## 🚀 Getting Started (Local Setup)
 
+To run this project on your local machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mt-abdullah/abdullah-dev.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd abdullah-dev
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
+
+## 👨‍💻 Author
+
+**M T Abdullah**
+
+-   **GitHub:** [@mt-abdullah](https://github.com/mt-abdullah)
+-   **LinkedIn:** [in/mt-abdullah](https://linkedin.com/in/mt-abdullah)
+
+## 📄 License
+
+This project is licensed under the MIT License. Copyright &copy; 2025 M T Abdullah.
