@@ -12,7 +12,7 @@ This is the official repository for my personal portfolio website, built from th
 
 ---
 
-![Portfolio Screenshot](./public/screenshot.png)
+![Portfolio Screenshot](./public/screenshot.PNG)
 
 
 ## 📋 About This Project
