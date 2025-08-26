@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
+
+* {
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+/* ================================================= */
+/* ===         PROFESSIONAL COLOR PALETTE        === */
+/* ================================================= */
+@theme {
+  --breakpoint-xxs: 21.25rem; /* 340px */
+  --breakpoint-xs: 23.125rem; /* 363px */
+  --breakpoint-xxl: 82.5rem; /* 1320px */
+
+  --color-picto-primary: #163853;       /* Dark Blue */
+  --color-picto-primary-dark: #0f2a40;  /* Darker Blue */
+  --color-soft-white: #f8fafc;          /* Off-White */
+  --color-soft-dark: #475569;           /* Slate Gray */
+}
+
+/* ================================================= */
+/* ===            GENERAL SITE STYLES            === */
+/* ================================================= */
+.btn-primary {
+  @apply bg-picto-primary border-0 text-white hover:scale-[102%] hover:bg-picto-primary-dark transition-all duration-500;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--color-soft-dark);
+  background-color: var(--color-soft-white);
+}
+.content {
+  @apply max-xxl:w-full xxl:max-w-[1320px] xxl:mx-auto;
+}
+.section-title {
+  color: var(--color-picto-primary);
+  @apply md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
+}
+.center {
+  @apply flex justify-center items-center;
+}
+
+/* ================================================= */
+/* ===       UPDATED DECORATIVE BACKGROUNDS      === */
+/* ================================================= */
+
+/* A new, modern radial gradient for the hero section */
+.introduction-profile-background {
+  background-color: var(--color-soft-white); /* Base color */
+  background-image: 
+    radial-gradient(
+      circle at 15% 95%,
+      hsla(212, 58%, 80%, 0.15), /* A light, semi-transparent blue glow */
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      hsla(212, 58%, 70%, 0.1), /* A slightly stronger but still faint blue glow */
+      transparent 35%
+    );
+}
+
+.blog-background {
+  background: radial-gradient(
+      circle at -10% 0%,
+      rgba(22, 56, 83, 0.08),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 110% 30%,
+      rgba(147, 197, 253, 0.1),
+      transparent 25%
+    );
+}
+
+
+/* ================================================= */
+/* ===         HERO GRAPHIC ENHANCEMENTS         === */
+/* ================================================= */
+
+/* Keyframe animation for the gentle floating effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Base styles for all floating tech icon circles */
+.tech-icon {
+  @apply absolute z-20 w-14 h-14 rounded-full flex items-center justify-center
+         text-white shadow-lg border-2 border-white/30;
+  
+  animation: float 4s ease-in-out infinite;
+  background-color: rgba(255, 255, 255, 0.1); /* Default glassy background */
+  backdrop-filter: blur(8px);
+}
+
+/* --- COLORFUL ICON MODIFIERS --- */
+/* Each color class overrides the default background */
+.tech-icon.purple { background-color: rgba(139, 92, 246, 0.8); }
+.tech-icon.blue   { background-color: rgba(59, 130, 246, 0.8); }
+.tech-icon.yellow { background-color: rgba(234, 179, 8, 0.8); }
+.tech-icon.green  { background-color: rgba(16, 185, 129, 0.8); }
+.tech-icon.teal   { background-color: rgba(20, 184, 166, 0.8); }
+
+/* ================================================= */
+/* ===         WORK PROCESS GLOW EFFECT          === */
+/* ================================================= */
+
+/* This uses a pseudo-element to create a blurred shape behind the card */
+.glow-blue, .glow-teal, .glow-indigo, .glow-green {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem; /* Matches the card's rounded-xl */
+  filter: blur(30px); /* This creates the soft, glowing effect */
+  z-index: -1;
+}
+
+/* We define the background color for each glow */
+.glow-blue { background-color: #3B82F6; }
+.glow-teal { background-color: #14B8A6; }
+.glow-indigo { background-color: #6366F1; }
+.glow-green { background-color: #10B981; }
+

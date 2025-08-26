@@ -1,0 +1,20 @@
+/* ================================================= */
+/* ===         SWIPER SLIDER PAGINATION          === */
+/* ================================================= */
+/* This section updates the slider dots to match the new theme. */
+
+.swiper-pagination-bullet-active {
+  /* The active dot now uses your primary dark blue color. */
+  background-color: var(--color-picto-primary) !important;
+  width: 30px;
+  height: 8px;
+  border-radius: 100px;
+  transition: 0.4s;
+}
+
+.swiper-pagination-bullet {
+  /* The inactive dots are a semi-transparent version of the main text color. */
+  background-color: var(--color-soft-dark);
+  opacity: 0.5;
+  transition: 0.4s;
+}
