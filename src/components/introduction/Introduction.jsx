@@ -36,14 +36,14 @@ const Introduction = () => {
   return (
     // 1. CONTAINER IS WIDER: max-w-screen-xl makes the section "longer" horizontally.
     <div
-      className="flex max-lg:flex-col-reverse items-center justify-center min-h-190  max-w-screen-xl mx-auto px-4 lg:gap-16"
+      className="flex max-lg:flex-col-reverse items-center justify-center   max-w-screen-xl mx-auto px-4 lg:gap-16"
       id="introduction"
     >
       {/* --- Left Side: Text Content --- */}
-      <div className="w-full lg:w-1/2 h-120  flex-col justify-center max-lg:text-center max-lg:py-12">
+      <div className="w-full lg:w-1/2 max-h-full  flex-col justify-center max-lg:text-center max-lg:py-12">
         <div>
           <h1 className="text-3xl xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold">
-            Hello, I’m <br />
+            <br/> <br/>  Hello, I’m <br />
             <span className="text-picto-primary">{heroData.name}</span>
           </h1>
           <h2 className="text-lg xxs:text-xl lg:text-2xl my-6 font-medium text-soft-dark">
@@ -78,7 +78,7 @@ const Introduction = () => {
 
       {/* --- Right Side: Professional Hero Graphic --- */}
       {/* 2. GAP IS ADJUSTED: Both columns now take up half the width on large screens (w-1/2). */}
-      <div className="w-full lg:w-3/7 h-120 max-lg:mx-auto relative flex-shrink-0">
+      <div className="w-full lg:w-3/7 max-h-120 max-lg:mx-auto relative flex-shrink-0">
         <div className="relative w-full aspect-[536/636] flex items-center justify-center">
           <div className="absolute w-full h-full bg-gray-200 rounded-3xl"></div>
           <img
