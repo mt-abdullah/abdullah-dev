@@ -29,7 +29,7 @@ const heroData = {
 const informationSummaryData = [
   { id: 1, title: "Years of Experience", description: "2+" },
   { id: 2, title: "Projects Delivered", description: "10+" },
-  { id: 3, title: "Certifications", description: "15+" },
+  { id: 3, title: "Certifications", description: "25+" },
 ];
 
 const Introduction = () => {
